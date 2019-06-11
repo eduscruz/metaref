@@ -29,7 +29,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'mod_metaref';
 $plugin->version = 1;
-$plugin->release = 'v0.94';
+$plugin->release = 'v0.941';
 $plugin->requires = 2018051700;
 $plugin->maturity = MATURITY_STABLE;
 $plugin->cron = 0;
