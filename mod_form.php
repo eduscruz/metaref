@@ -107,18 +107,18 @@ class mod_metaref_mod_form extends moodleform_mod {
         // add assign activity
         $selectActivity = $mform->addElement('select', 'selectActivity', get_string('Activity', 'metaref'), $assingcombo);
         $selectActivity->setMultiple(false);  
-        $mform->hideIf('selectActivity', 'selactivityquiz', 'neq', 1);
+        $mform->disabledIf('selectActivity', 'selactivityquiz', 'neq', 1);
         
         // add quiz activity
         $selectQuiz = $mform->addElement('select', 'selectQuiz', get_string('Quiz', 'metaref'), $quizcombo);
         $selectQuiz->setMultiple(false); 
-        $mform->hideIf('selectQuiz', 'selactivityquiz', 'neq', 0);
+        $mform->disabledIf('selectQuiz', 'selactivityquiz', 'neq', 0);
 
         // add right answer checkbox
         $mform->addElement('advcheckbox', 'rightanswerchk', 'Mostrar resposta correta', 'Mostrar resposta correta', array(0,1)) ;
         
         $mform->addElement('textarea', 'rightanswertxt', get_string('header4', 'metaref'), 'wrap="virtual" rows="20" cols="50"');
-        $mform->hideIf('rightanswertxt', 'rightanswerchk');
+        $mform->disabledIf('rightanswertxt', 'rightanswerchk');
         
         // get course module id
         if ($PAGE->cm) {
