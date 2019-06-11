@@ -63,11 +63,13 @@ class backup_metaref_activity_task extends backup_activity_task {
 
         // Link to the list of metarefs.
         $search = '/('.$base.'\/mod\/metaref\/index.php\?id\=)([0-9]+)/';
-        $content = preg_replace($search, '$@metarefINDEX*$2@$', $content);
+        // $content = preg_replace($search, '$@metarefINDEX*$2@$', $content);
+        $content = preg_replace($search, '$@METAREFINDEX*$2@$', $content);
 
         // Link to metaref view by moduleid.
         $search = '/('.$base.'\/mod\/metaref\/view.php\?id\=)([0-9]+)/';
-        $content = preg_replace($search, '$@metarefVIEWBYID*$2@$', $content);
+        // $content = preg_replace($search, '$@metarefVIEWBYID*$2@$', $content);
+        $content = preg_replace($search, '$@METAREFVIEWBYID*$2@$', $content);
 
         return $content;
     }
