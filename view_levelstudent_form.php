@@ -110,17 +110,24 @@ class view_levelstudent_form extends moodleform {
             }
             
             if ($metaref_user_result->kmbgrade  != null) {
-                if ($metaref_user_result->kmbgrade < (-0.25)) {
-                   $prekmb = get_string('textactivity32', 'metaref');
-                   $kmbknowledge = get_string('textactivity35', 'metaref');
-                } elseif (($metaref_user_result->kmbgrade >= (-0.25)) && (($metaref_user_result->kmbgrade <= (0.25)))) {
-                    $prekmb = get_string('textactivity33', 'metaref');
+
+                if (($metaref_user_result->kmagrade >= (0.5)) {
+                    $prekmb = get_string('realist', 'metaref');
                     $kmbknowledge = get_string('textactivity36', 'metaref');
                 } else {
-                    $prekmb = get_string('textactivity34', 'metaref');
-                    $kmbknowledge = get_string('textactivity37', 'metaref');
+                    # code... 
+                    if ($metaref_user_result->kmbgrade < (-0.25)) {
+                        $prekmb = get_string('textactivity32', 'metaref');
+                        $kmbknowledge = get_string('textactivity35', 'metaref');
+                    } elseif (($metaref_user_result->kmbgrade >= (-0.25)) && (($metaref_user_result->kmbgrade <= (0.25)))) {
+                        $prekmb = get_string('textactivity33', 'metaref');
+                        $kmbknowledge = get_string('textactivity36', 'metaref');
+                    } else {
+                        $prekmb = get_string('textactivity34', 'metaref');
+                        $kmbknowledge = get_string('textactivity37', 'metaref');
+                    }
                 }
-
+                    
                 $text2 = '<strong>'.get_string('textactivity28', 'metaref').'</strong><br><br>';
                 $text2 .= get_string('textactivity29', 'metaref').' <strong> ';
                 $text2 .= $prekmb;
@@ -128,10 +135,9 @@ class view_levelstudent_form extends moodleform {
                 $text2 .= $kmbknowledge;
                 $text2 .= ' </strong> '.get_string('textactivity31', 'metaref');
                 echo $OUTPUT->box($text2);
+            } else {
+                echo $OUTPUT->box('error: metaref_user_grades record found');
             }
-        }
-        else{
-            echo $OUTPUT->box('error: metaref_user_grades record found');
         }
 
         $redirect = '<p><a href="/course/view.php?id='.$COURSE->id.'">';

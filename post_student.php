@@ -293,7 +293,7 @@ class post_student extends moodleform {
                         <table>
                             <tr>
                                 <th>"
-                                    .get_string('kmavalue', 'metaref').
+                                    .get_string('kmbvalue', 'metaref').
                                 "</th>
                                 <th>"
                                     .get_string('classification', 'metaref').

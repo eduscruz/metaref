@@ -125,6 +125,7 @@ $string ['textactivity37'] = 'MENOS';
 
 // post_student
 $string ['kmavalue'] = 'Valor de KMA';
+$string ['kmbvalue'] = 'Valor de KMB';
 $string ['classification'] = 'Clasificación';
 $string ['interpretación'] = 'Interpretación';
 $string ['lowkma'] = 'KMA Bajo';
@@ -139,5 +140,4 @@ $string ['optimistic'] = 'Optimista';
 $string ['texttable5'] = 'El alumno tiende a estimar que puede resolver los problemas, pero no consigue la mayoría de las veces';
 $string ['pessimistic'] = 'pesimista';
 $string ['texttable6'] = 'El alumno tiende a estimar que no puede resolver los problemas, pero después él consigue';
-$string ['random'] = 'Aleatorio';
 $string ['texttable7'] = 'Las estimaciones del alumno sobre su conocimiento son tan optimistas como pesimistas';
