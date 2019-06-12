@@ -103,7 +103,7 @@ $string['textactivity14'] = 'Your average KMB is: ';
 $string['textactivity15'] = 'Your average SAA is: ';
 $string['textactivity16'] = 'Your average SAB is: ';
 $string['textactivity17'] = 'See below your KMA and your average KMB';
-$string['textactivity18'] = 'YOUR TASK: Read and reflect on the evaluation of MePPRe on what you have shown to know about your own level 
+$string['textactivity18'] = 'YOUR TASK: Read and reflect on the evaluation of MetaREF on what you have shown to know about your own level 
                             of knowledge acquisition.  Try to remember this feedback while performing the next activity (problem).';
 $string['textactivity19'] = 'How is your accuracy in estimating your knowledge (metacognition)?';
 $string['textactivity20'] = 'You demonstrated ';

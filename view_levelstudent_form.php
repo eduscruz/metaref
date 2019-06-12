@@ -111,7 +111,7 @@ class view_levelstudent_form extends moodleform {
             
             if ($metaref_user_result->kmbgrade  != null) {
 
-                if (($metaref_user_result->kmagrade >= (0.5)) {
+                if ($metaref_user_result->kmagrade >= (0.5)) {
                     $prekmb = get_string('realist', 'metaref');
                     $kmbknowledge = get_string('textactivity36', 'metaref');
                 } else {

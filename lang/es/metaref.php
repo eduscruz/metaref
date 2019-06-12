@@ -101,7 +101,7 @@ $string ['textactivity14'] = 'Su KMB es:';
 $string ['textactivity15'] = 'Su SAA es:';
 $string ['textactivity16'] = 'Su SAB es:';
 $string ['textactivity17'] = 'Vea abajo su KMA y su KMB medio';
-$string ['textactivity18'] = 'SU TAREA: Lea y reflexione sobre la evaluación de MePPRe sobre lo que usted ha demostrado saber acerca de su propio
+$string ['textactivity18'] = 'SU TAREA: Lea y reflexione sobre la evaluación de MetaREF sobre lo que usted ha demostrado saber acerca de su propio
  de adquisición de conocimientos. Intenta recordar ese feedback durante la realización de la próxima actividad (problema). ';
 $string ['textactivity19'] = '¿Cómo está su precisión en estimar su conocimiento (metacognición)?';
 $string ['textactivity20'] = 'Usted demostró ';
