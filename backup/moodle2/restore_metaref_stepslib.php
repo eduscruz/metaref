@@ -57,7 +57,7 @@ class restore_metaref_activity_structure_step extends restore_activity_structure
 
         $data = (object)$data;
         $oldid = $data->id;
-        $data->course = $this->get_courseid();
+        // $data->course = $this->get_courseid();
 
         if (empty($data->timecreated)) {
             $data->timecreated = time();
@@ -67,10 +67,10 @@ class restore_metaref_activity_structure_step extends restore_activity_structure
             $data->timemodified = time();
         }
 
-        if ($data->grade < 0) {
-            // Scale found, get mapping.
-            $data->grade = -($this->get_mappingid('scale', abs($data->grade)));
-        }
+        // if ($data->grade < 0) {
+        //     // Scale found, get mapping.
+        //     $data->grade = -($this->get_mappingid('scale', abs($data->grade)));
+        // }
 
         // Create the metaref instance.
         $newitemid = $DB->insert_record('metaref', $data);
