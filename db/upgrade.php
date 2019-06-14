@@ -68,6 +68,8 @@ function xmldb_metaref_upgrade($oldversion) {
      *
      * First example, some fields were added to install.xml on 2007/04/01
      */
+
+    /* 
     if ($oldversion < 2007040100) {
 
         // Define field course to be added to metaref.
@@ -149,7 +151,7 @@ function xmldb_metaref_upgrade($oldversion) {
 
         upgrade_mod_savepoint(true, 2007040200, 'metaref');
     }
-
+ */
     /*
      * And that's all. Please, examine and understand the 3 example blocks above. Also
      * it's interesting to look how other modules are using this script. Remember that
