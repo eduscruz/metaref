@@ -242,7 +242,8 @@ function metaref_user_grades_add(stdClass $fromform){
     $metaref_user_grades = new stdClass();
     $metaref_user_grades->idmetaref = $fromform->metarefid;
     $metaref_user_grades->userid = $fromform->userid;
-    $metaref_user_grades->course = $COURSE->id;
+    // $metaref_user_grades->course = $COURSE->id;
+    $metaref_user_grades->course = $fromform->courseid;
 
     // get recorset from metaref id
     $metaref = $DB->get_record('metaref', array('id' => $fromform->metarefid));
@@ -319,7 +320,8 @@ function metaref_user_grades_update(stdClass $fromform) {
     $metaref_user_grades->ep1 = $fromform->selfregulation;
     $metaref_user_grades->sr1 = $fromform->selfregulation1;
     $metaref_user_grades->timemodified = time();
-    $metaref_user_grades->course = $COURSE->id;
+    // $metaref_user_grades->course = $COURSE->id;
+    $metaref_user_grades->course = $fromform->courseid;
     
     
     // if metaref is set up with activity

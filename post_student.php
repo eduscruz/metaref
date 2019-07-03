@@ -71,6 +71,11 @@ class post_student extends moodleform {
         $mform->addElement('hidden', 'metarefid');
         $mform->setType('metarefid', PARAM_INT);
         $mform->setDefault('metarefid', $metarefresult->id);
+
+        // binds course id
+        $mform->addElement('hidden', 'courseid');
+        $mform->setType('courseid', PARAM_INT);
+        $mform->setDefault('courseid', $COURSE->id)
        
         // binds this instance to the  metaref_user_grade id
         $mform->addElement('hidden', 'metarefuserid');
