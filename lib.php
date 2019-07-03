@@ -81,6 +81,7 @@ function metaref_add_instance(stdClass $metaref, mod_metaref_mod_form $mform = n
     
     $metaref->prefbkmaavg = 0;
     $metaref->posfbkmaavg = 0;
+    $metaref->course = $metaref->courseid;
     
     // Get data from form.
     if (isset($metaref->PreMetacognition)) {
@@ -137,7 +138,6 @@ function metaref_add_instance(stdClass $metaref, mod_metaref_mod_form $mform = n
         $metaref->rightanswer = null;
     }
     
-
     $metaref->id = $DB->insert_record('metaref', $metaref);
     metaref_grade_item_update($metaref);
 
@@ -163,7 +163,8 @@ function metaref_update_instance(stdClass $metaref, mod_metaref_mod_form $mform 
 
     $metaref->timemodified = time();
     $metaref->id = $metaref->instance;
-
+    $metaref->course = $metaref->courseid;
+    
     // Get data from form.
     if (isset($metaref->PreMetacognition)) {
         $metaref->prefeedback = $metaref->PreMetacognition;

@@ -57,6 +57,11 @@ class mod_metaref_mod_form extends moodleform_mod {
             $this->add_intro_editor();
         }
 
+        // add course id
+        $mform->addElement('hidden', 'courseid');
+        $mform->setType('courseid', PARAM_INT);
+        $mform->setDefault('courseid', $COURSE->id);
+        
         //add section header
         $mform->addElement('header', 'metareffieldset', get_string('metareffieldset', 'metaref'));
 
