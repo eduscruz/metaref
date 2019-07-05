@@ -76,7 +76,7 @@ class pre_student extends moodleform {
         // binds course id
         $mform->addElement('hidden', 'courseid');
         $mform->setType('courseid', PARAM_INT);
-        $mform->setDefault('courseid', $COURSE->id)
+        $mform->setDefault('courseid', $COURSE->id);
 
         // binds this instance to the  metaref_user_grade id
         $mform->addElement('hidden', 'metarefuserid');
