@@ -1066,6 +1066,18 @@ function convertquiz($value){
 
 
 /**
+ * This function will convert and multiply the grade of quiz 
+ *  *
+ * @param double $value 
+ * @return double
+ */
+function convertAssigment($value){
+    return convertgrade($value*10.0);
+}
+
+
+
+/**
  * This function will convert the feedback
  *  *
  * @param double $value 

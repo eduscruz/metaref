@@ -132,7 +132,7 @@ class post_student extends moodleform {
                     // verify is $activityresult is not empty
                     if ($activityresult) {
                         $valuegrade = convertgradenum($activityresult->grade);
-                        $mform->addElement('html', "<td>".convertgrade($activityresult->grade)."</td>");
+                        $mform->addElement('html', "<td>".convertAssigment($activityresult->grade)."</td>");
                     } else {
                         $mform->addElement('html', "<td>Empty</td>");
                     }
