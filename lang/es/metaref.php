@@ -91,7 +91,7 @@ $string ['textactivity6'] = 'Mi juicio es';
 $string ['textactivity7'] = 'Compare su solución con la solución del profesor y marque una de las siguientes opciones';
 $string ['textactivity8'] = 'Su solución es idéntica, equivalente o diferente, pero también es correcta (75% a 100%)';
 $string ['textactivity9'] = 'Su solución es diferente y está más o menos correcta (de 50% a 75% correcta)';
-$string ['textactivity10'] = 'Su solución es diferente y está más o menos correcta (de 50% a 75% correcta)';
+$string ['textactivity10'] = 'Su solución es diferente e incorrecta (menos del 50% correcta)';
 $string ['textactivity11'] = 'Vea abajo el enunciado, su solución y la solución propuesta por el profesor. La solución ofrecida por el profesor (que puede no ser la única) debe ser usada para fines de comparación con su solución.<br><strong> SU TAREA: </strong> Marque entre las opciones siguientes que considere más apropiadas, después de comparar SU solución con la puesta a disposición del PROFESOR. ¿Cuán próxima su solución está de la solución estándar del profesor? ';
 $string ['textactivity12'] = 'Los datos siguientes muestran sus resultados históricos de <strong> PREVISIÓN de rendimiento y EFECTIVO </strong>
 rendimiento en problemas anteriores. Mire sus datos, especialmente las columnas "DIFERENCIAS" (en la pre y post evaluación)

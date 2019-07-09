@@ -252,7 +252,7 @@ function metaref_user_grades_add(stdClass $fromform){
     if($metaref->activityquiz){
         // get recorset from assign_grades
         $record = $DB->get_record('assign_grades', array('assignment' => $metaref->idactivity, 'userid' => $fromform->userid));
-        $wfactor = 1.0;
+        $wfactor = 10.0;
     }
     // if metaref is set up with quiz
     else {
@@ -328,7 +328,7 @@ function metaref_user_grades_update(stdClass $fromform) {
     if($metaref->activityquiz){
         // get recorset from assign_grades
         $record = $DB->get_record('assign_grades', array('assignment' => $metaref->idactivity, 'userid' => $fromform->userid));
-        $wfactor = 1.0;
+        $wfactor = 10.0;
     }
     // if metaref is set up with quiz
     else {

@@ -90,7 +90,7 @@ $string['textactivity6'] = 'My judgment is';
 $string['textactivity7'] = 'Compare your solution with the teacher solution and tick one of the following options';
 $string['textactivity8'] = 'Your solution is identical, equivalent or different but is correct as well (75% to 100%)';
 $string['textactivity9'] = 'Your solution is different, and is more or less correct (from 50% to 75% correct)';
-$string['textactivity10'] = 'Your solution is different and is more or less correct (from 50% to 75% correct)';
+$string['textactivity10'] = 'Your solution is different and incorrect (less than 50% correct)';
 $string['textactivity11'] = "See below the statement, its solution and the solution proposed by the teacher.
                              The solution provided by the teacher (which may not be the only one) should be used for comparison purposes with your solution.
                              <strong> YOUR TASK:</ strong> Check the following options, which you consider most appropriate, after comparing YOUR solution with 

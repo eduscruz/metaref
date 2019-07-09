@@ -91,7 +91,7 @@ $string['textactivity6'] = 'Meu julgamento é';
 $string['textactivity7'] = 'Compare sua solução com a solução do professor e marque uma das seguintes opções';
 $string['textactivity8'] = 'Sua solução é idêntica, equivalente ou diferente, mas também está correta (75% a 100%)';
 $string['textactivity9'] = 'Sua solução é diferente e está mais ou menos correta (de 50% a 75% correta)';
-$string['textactivity10'] = 'Sua solução é diferente e está mais ou menos correta (de 50% a 75% correta)';
+$string['textactivity10'] = 'Sua solução é diferente e está incorreta (menos que 50% correta)';
 $string['textactivity11'] = 'Veja abaixo o enunciado, a sua solução e a solução proposta pelo professor.  
                             A solução disponibilizada pelo professor (que pode não ser a única) deve ser usada para fins de comparação com sua solução.<br> 
                             <strong>SUA TAREFA:</strong> Assinale dentre as opções a seguir a que considera mais adequada, após comparar  SUA solução com 
