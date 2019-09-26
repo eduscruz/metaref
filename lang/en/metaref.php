@@ -45,8 +45,8 @@ $string['finish'] = 'Finish';
 // Strings of mod_form
 $string['PreMetacognition'] = 'KMA/KMB';
 $string['PreFeedback'] = 'Feedback KMA/KMB';
-$string['PosMetacognition'] = 'EDS1/EDS2';
-$string['PosFeedback'] = 'Feedback EDS1/EDS2';;
+$string['PosMetacognition'] = 'MKM/MKGM';
+$string['PosFeedback'] = 'Feedback MKM/MKGM';;
 $string['Activity'] = 'Activity';
 
 // strings from view_prestudent
