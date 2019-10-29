@@ -144,3 +144,6 @@ $string['texttable5'] = 'O aluno tende a estimar que pode resolver os problemas,
 $string['pessimistic'] = 'Pessimista';
 $string['texttable6'] = 'Aluno tende a estimar que não pode resolver os problemas, mas depois ele consegue';
 $string['texttable7'] = 'Estimativas do aluno sobre o seu conhecimento são tão otimistas quanto pessimistas';
+
+// view_results_form
+$string['result'] = 'Resultados';

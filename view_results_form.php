@@ -53,8 +53,8 @@ class view_results_form extends moodleform {
         $mform = $this->_form;  
         
         //add section header
-        $header1 = $metarefresult->name;
-        $header1 .= ' Result';
+        $header1 = $metarefresult->name + ': ';
+        $header1 .= get_string('result', 'metaref');
         $mform->addElement('header', 'metareffieldset', $header1);
         
         // binds this instance to the metaref id
