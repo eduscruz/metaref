@@ -87,7 +87,8 @@ class mod_metaref_mod_form extends moodleform_mod {
         asort($quizcombo);
 
         // add pre PreMetacognition checkbox
-        $mform->addElement('advcheckbox', 'PreMetacognition', get_string('PreMetacognition', 'metaref'), 'Enable kma/kmb', array(0,1)) ;
+        $mform->addElement('advcheckbox', 'PreMetacognition', get_string('PreMetacognition', 'metaref'), 'Habilitar KMA/KMB', array(0,1));
+        $mform->addHelpButton('PreMetacognition', 'kmakmbfname', 'metaref');
 
         // add pre selectPreMetacognition 
         $selectPre = $mform->addElement('select', 'selectPreMetacognition', get_string('PreFeedback', 'metaref'), $fbcombo);
@@ -96,7 +97,8 @@ class mod_metaref_mod_form extends moodleform_mod {
         
         
         // add pos PosMetacognition checkbox
-        $mform->addElement('advcheckbox', 'PosMetacognition', get_string('PosMetacognition', 'metaref'), 'Enable eds1/eds2', array(0,1)) ;
+        $mform->addElement('advcheckbox', 'PosMetacognition', get_string('PosMetacognition', 'metaref'), 'Habilitar MKM/MKGM', array(0,1));
+        $mform->addHelpButton('PosMetacognition', 'metarefname', 'metaref');
         
         // add pre selectPosMetacognition
         $selectPos = $mform->addElement('select', 'selectPosMetacognition', get_string('PosFeedback', 'metaref'), $fbcombo);
@@ -121,6 +123,7 @@ class mod_metaref_mod_form extends moodleform_mod {
 
         // add right answer checkbox
         $mform->addElement('advcheckbox', 'rightanswerchk', 'Mostrar resposta correta', 'Mostrar resposta correta', array(0,1)) ;
+        $mform->addHelpButton('rightanswerchk', 'metarefname', 'metaref');
         
         $mform->addElement('textarea', 'rightanswertxt', get_string('header4', 'metaref'), 'wrap="virtual" rows="20" cols="50"');
         $mform->hideIf('rightanswertxt', 'rightanswerchk');

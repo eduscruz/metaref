@@ -48,6 +48,8 @@ $string['PreFeedback'] = 'Feedback KMA/KMB';
 $string['PosMetacognition'] = 'MKM/MKGM';
 $string['PosFeedback'] = 'Feedback MKM/MKGM';;
 $string['Activity'] = 'Activity';
+$string['kmakmbfname'] = 'Habilita o indice kmakmbfname';
+$string['kmakmbfname_help'] = 'Este é o conteúdo da dica de ferramenta de ajuda associada ao campo metarefname. A sintaxe de Markdown é suportada.';
 
 // strings from view_prestudent
 $string['header1'] = 'The questions:';
